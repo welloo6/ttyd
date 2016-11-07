@@ -1,0 +1,21 @@
+{
+  "name": "ttyd",
+  "version": "1.1.0",
+  "description": "Share your terminal over the web",
+  "main": "js/app.js",
+  "repository": {
+    "url": "git@github.com:tsl0922/ttyd.git",
+    "type": "git"
+  },
+  "author": "Shuanglei Tao <tsl0922@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-xterm": "cd node_modules/xterm && npm install && env BUILD_DIR=dist npm run build",
+    "build": "npm run build-xterm && gulp"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inline-source": "^3.0.0",
+    "xterm": "sourcelair/xterm.js#bf334238b7cc91f6b8c9497b5b7ca1b510d696cd"
+  }
+}
